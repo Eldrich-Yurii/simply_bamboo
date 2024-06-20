@@ -74,6 +74,8 @@
     border-radius: 10px;
 }
 
+/* hero section */
+
 .hero {
     display: flex;
     justify-content: center;
@@ -143,6 +145,8 @@
     height: 550px;
 }
 /* end of hero section */
+
+
 /*Company Profile section */
 .profile-container {
     display: grid;
@@ -177,6 +181,8 @@
     font-family: "Bree serif", serif;
 }
 /* end of profile section */
+
+
 /* 3 bullets */
 .bullet-background {
     background-color: #0F372E;
@@ -398,7 +404,7 @@ footer {
 }
 
 .copyright{
-    padding-top: 15px;
+    padding: 15px 0;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -409,11 +415,11 @@ footer {
     }
 
     .brand-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .logo {
-        width: 45px;
+        width: 48px;
     }
 
     .navbar-links {
@@ -422,9 +428,13 @@ footer {
     }
 
     .navbar {
+        position: sticky;
+        top: 0;
+        gap: 0;
         flex-direction: column;
         align-items: flex-start;
         padding: 0 5px;
+        z-index: 10;
     }
 
     .navbar-links ul {
@@ -444,6 +454,242 @@ footer {
         display: flex;
     }
 
+    .hero {
+        /* display: flex;
+        justify-content: center; */
+        background-color: #0F372E;
+        height: auto;
+    }
+    
+    .hero-text-container {
+        display: flex;
+        align-items: flex-end;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        font-family: "Bree serif", serif;
+        height: 120px;
+    }
+    
+    
+    .hero-text {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .hero-subtext-container {
+        padding-left: 40px;
+        font-size: small;
+        font-family: "Bree serif", serif;
+    
+    }
+    
+    .hero-subtext {
+        color: #C5834D;
+    }
+    
+    .bamboo {
+        color: #C5834D;
+    }
+    .shop-butt-container {
+        padding-top: 30px;
+        padding-left: 40px;
+        width: 200px;
+    }
+    
+    .shop-butt:hover {
+        cursor: pointer;
+    }
+    
+    .btn {
+        background-color: #C5834D;
+        text-decoration: none;
+        padding: 15px 30px;
+        box-shadow: 8px 9px 0 #8b5a32;
+        font-family: "Bree serif", serif;
+    
+    }
+    
+    /* .button-border {
+        position: relative;
+        width: 128px;
+        height: 50px;
+        top: -25px;
+        right: -12px;
+        border: 5px solid #C5834D;
+    } */
+    
+    .hanger {
+        width: 100%;
+        height: auto;
+    }
+    /* end of hero section */
+    
+
+    /* company profile */
+    .profile-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .btn {
+        background-color: #C5834D;
+        font-size: small;
+        text-decoration: none;
+        padding: 10px 15px;
+        box-shadow: 8px 9px 0 #8b5a32;
+        font-family: "Bree serif", serif;
+    
+    }
+
+    .warehouse-image {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+    }
+
+    .profile-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* width: 600px; */
+        padding: 40px 90px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .company-profile {
+        border-left: 5px solid #C5834D;
+        font-size: larger;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .text-desc {
+        font-size: small;
+        font-weight: 500;
+    }
+
+    .shop-now-container-in-profile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Bree serif", serif;
+    }
+
+    /* 3 bullets */
+
+    .bullet-background {
+        padding: 30px 0;
+        background-color: #0F372E;
+        height: auto;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .bullet-item {
+        width: 300px;
+    }
+    
+    .bullet-icon {
+        font-size: 35px;
+        /* padding-top: 10px; */
+        padding-bottom: 15px;
+    }
+    
+    .bullet-heading {
+        padding-bottom: 5px;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .bullet-text {
+        font-size: small;
+    }
+
+    /* concept */
+    .concept {
+        height: auto;
+        /* font-family: "Montserrat", sans-serif; */
+    }
+
+    .concept-poster {
+        /* object-fit: cover;
+        object-position: center;
+        width: 100%; */
+        height: auto;
+    }
+
+
+    .concept-text {
+        /* position: relative; */
+        top: -100px;
+        right: 20px;
+        border-right: 6px solid #0F372E;
+        padding-right: 10px;
+        /* display: flex;
+        justify-content: flex-end; */
+        font-size: 35px;
+        /* font-weight: bold;
+        width: 100%; */
+    }
+
+    .concept-quote {
+        /* position: relative; */
+        top: -340px;
+        left: -30px;
+        font-size: 16px;
+        /* font-weight: bold; */
+        width: 250px;
+        /* text-align: center; */
+    }
+    /* end of concept section */
+
+
+    /* product section */
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* gap: 50px; */
+    }
+
+    .product-div {
+        height: auto;
+    }
+
+    .our-products {
+        color: #1e1e1e;
+        font-size: xx-large;
+        font-family: "Montserrat", sans-serif;
+        /* padding: 65px 0; */
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .product-item-container {
+        /* height: 400px; */
+    }
+
+    .product-item {
+        /* width: 300px; */
+    }
+
+    .product-border {
+        border: 5px solid #0F372E;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: -290px;
+        left: 10px;
+        z-index: -1;
+    }
+
+    /* footer */
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -452,5 +698,128 @@ footer {
         padding: 50px 60px;
         height: auto;
         /* gap: 40px; */
+    }
+
+    footer {
+        background-color: #0F372E;
+        height: auto;
+    }
+    
+    .footer-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+        padding: 50px 40px;
+        height: auto;
+        gap: 40px;
+    }
+    
+    .brand-section {
+        width: 200px;
+    }
+    
+    .brand-tagline {
+        font-size: 16px;
+        /* padding-left: 10px; */
+        font-family: "Montserrat", sans-serif;
+        font-size: small;
+        line-height: 20px;
+    
+    }
+    
+    /* .contact-container {
+        
+    } */
+    
+    /* .social-media-container {
+        padding-bottom: 10px;
+    }
+     */
+    .social-media-icons {
+        /* display: flex;
+        font-size: large; */
+        padding-right: 5px;
+        text-decoration: none;
+    }
+    
+    .contact-us {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    
+    .send-email-btn {
+        background-color: #C5834D;
+        box-shadow: 8px 9px 0 #8b5a32;
+        padding: 8px;
+        text-decoration: none;
+        font-size: x-small;
+        text-transform: uppercase;
+    }
+    
+    .send-email-btn-container {
+        padding-top: 10px;
+    }
+    
+    /* .send-email-btn-border {
+        border: 3px solid #C5834D;
+        width: 115px;
+        height: 40px;
+        right: -4px;
+        top: -20px;
+        position: relative;
+    } */
+    
+    .quick-links {
+        font-weight: 500;
+        font-size: 1rem;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+    
+    .links-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list {
+        text-decoration: none;
+        font-size: small;
+        padding-top: 5px;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .list-item:hover {
+        color: #C5834D;
+    }
+    
+    .location-container {
+        width: 150px;
+    }
+    
+    .location {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+    
+    .location-subtext {
+        font-family: "Montserrat", sans-serif;
+        font-size: small;
+        line-height: 20px;
+    }
+    
+    .copyright-container {
+        padding: 0 30px;
+        text-align: center;
+    }
+    
+    .copyright{
+        padding: 15px 0;
+        font-size: small;
+        font-family: "Montserrat", sans-serif;
     }
 }
