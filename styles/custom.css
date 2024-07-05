@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     color: #F2EBE2;
+    scroll-behavior: smooth;
 }
 
 .bree-serif-font {
@@ -13,6 +14,8 @@
 
 /* hero section */
 .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +24,7 @@
     background: #0F372E;
     font-family: "Bree serif", serif;
     color: #F2EBE2;
+    z-index: 10;
 }
 
 
@@ -29,6 +33,7 @@
     display: flex;
     align-items: center;
     font-family: "Bree serif", serif;
+    text-decoration: none;
 }
 
 .logo {
@@ -369,6 +374,7 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding-left: 0;
 }
 
 .list {
@@ -428,7 +434,6 @@ footer {
     }
 
     .navbar {
-        position: sticky;
         top: 0;
         gap: 0;
         flex-direction: column;
@@ -670,14 +675,14 @@ footer {
         justify-content: center;
         
     }
-
+/* 
     .product-item-container {
-        /* height: 400px; */
+        height: 400px;
     }
 
     .product-item {
-        /* width: 300px; */
-    }
+        width: 300px;
+    } */
 
     .product-border {
         border: 5px solid #0F372E;

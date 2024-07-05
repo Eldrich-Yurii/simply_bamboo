@@ -12,9 +12,12 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="brand-title">
-            <img src="/assets/simply-bamboo.png" alt="logo" class="logo">
-            SIMPLY BAMBOO</div>
+        <div>
+            <a href="#home" class="brand-title">
+                <img src="/assets/simply-bamboo.png" alt="logo" class="logo">
+                SIMPLY BAMBOO
+            </a>
+        </div>
         <a href="#" class="toggle-button"> 
             <span class="bar"></span>
             <span class="bar"></span>
@@ -22,17 +25,17 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Concept</a></li>
-                <li><a href="#">Product</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#product">Product</a></li>
             </ul>
         </div>
     </nav>
     <!-- end of navbar -->
     <!-- main content -->
     <main>
-        <div class="hero">
+        <div class="hero" id="home">
             <section>
                 <div class="hero-text-container">
                     <h1 class="hero-text">FOLDABLE <span class="bamboo">BAMBOO</span><br>CLOTHE HANGER</h1>
@@ -55,7 +58,7 @@
             </section>
         </div>
         <!-- Profile section -->
-        <div class="profile-container">
+        <div class="profile-container" id="profile">
             <img src="/assets/Simply-Bamboo-Warehouse-Building-Mockup.jpg" 
             alt="SImply_bamboo_Warehouse" class="warehouse-image">
             <section class="profile-desc">
@@ -75,7 +78,7 @@
             </section>
         </div>
         <!-- 3 bullets -->
-        <div class="bullet-background">
+        <div class="bullet-background" id="bullets">
             <div class="bullet-item">
                 <i class="fa-solid fa-earth-asia bullet-icon" style="color: #f2ebe2;"></i>
                 <h2 class="bullet-heading">ECO-FRIENDLY</h2>
@@ -95,7 +98,7 @@
         </div>
         <!-- end of 3 bullet -->
         <!-- Concept -->
-        <div class="concept">
+        <div class="concept" id="concept">
             <img src="/assets/Poster_on_Concrete_Background_Mockup_1_Simply_Bamboo.jpg" alt="" class="concept-poster">
             <p class="concept-quote" style="color: black;">
                 “inspiring and life transforming”
@@ -106,7 +109,7 @@
         </div>
         <!-- end of Concept -->
         <!-- Our Products -->
-       <div class="product-div">
+       <div class="product-div" id="product">
         <h2 class="our-products">Our Products</h2>
         <section class="product-container">
             <div class="product-item-container">
@@ -148,14 +151,13 @@
                         <a href="test-link.html" class="social-media-icons">
                             <i class="fa-brands fa-instagram fa-lg" style="color: #f2ebe2;"></i>
                         </a>
-                        <a href="test-link.html" class="social-media-icons">
+                        <a href="mailto:myemail@gmail.com" class="social-media-icons">
                             <i class="fa-regular fa-envelope fa-lg" style="color: #f2ebe2;"></i>
                         </a>
                     </span>
                 </div>
                 <div class="send-email-btn-container">
-                    <a href="test-link.html" class="send-email-btn bree-serif-font"><i class="fa-regular fa-paper-plane fa-lg" style="color: #f2ebe2;"></i>
-                        
+                    <a href="mailto:myemail@gmail.com" class="send-email-btn bree-serif-font"><i class="fa-regular fa-paper-plane fa-lg" style="color: #f2ebe2;"></i>
                         send email
                     </a>
                     <!-- <div class="send-email-btn-border"></div> -->
@@ -163,20 +165,21 @@
             </section>
             <section>
                 <h2 class="bree-serif-font quick-links">Quick Links</h2>
-                <div class="links-list">
-                    <a href="" class="list">
+
+                <ol class="links-list">
+                    <a href="#home" class="list">
                        <li class="list-item">Home</li>
                     </a>
-                    <a href="" class="list">
+                    <a href="#profile" class="list">
                        <li class="list-item">Profile</li>
                    </a>
-                   <a href="" class="list">
+                   <a href="#concept" class="list">
                        <li class="list-item">Concept</li>
                    </a>
-                   <a href="" class="list">
+                   <a href="#product" class="list">
                        <li class="list-item">Product</li>
                    </a>
-                </div>
+                </ol>
             </section>
             <!-- Location -->
             <section class="location-container">
